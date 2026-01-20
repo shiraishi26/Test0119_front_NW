@@ -21,13 +21,13 @@ createApp({
       };
 
       // 実際のAPI URLに置き換えてください
-      const response = await axios.post('https://m3aya-test-acavnet.yellowsmoke-17d1c7de.japaneast.azurecontainerapps.io/api/INSERT', param);
+      const response = await axios.post('https://m3aya-testback.m3harbor.net/api/INSERT', param);
       console.log(response.data);
     };
 
     const readData = async () => {
       // 実際のAPI URLに置き換えてください
-      const response = await axios.get('https://m3aya-test-acavnet.yellowsmoke-17d1c7de.japaneast.azurecontainerapps.io/api/SELECT');
+      const response = await axios.get('https://m3aya-testback.m3harbor.net/api/SELECT');
       console.log(response.data);
       dataList.value = response.data.List;
     };
